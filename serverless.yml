@@ -11,6 +11,15 @@ provider:
   region: us-east-1
   tags:
     TEAM: test
+  environment:
+    log_level: ${self:custom.logLevel.${self:custom.stage}, self:custom.logLevel.default}
+
+custom:
+  stage: ${opt:stage, self:provider.stage}
+  logLevel:
+    prod: INFO
+    default: DEBUG
+
 # ---delete the iamRoleStatements
 
 #  iamRoleStatements:
