@@ -127,7 +127,7 @@ resources:
     mySubscription:
       Type: AWS::SNS::Subscription
       Properties:
-        Endpoint: magdici.irina@@gmail.com
+        Endpoint: magdici.irina@gmail.com
         Protocol: email
         TopicArn: 
           Ref: restaurantNotificationTopic            
