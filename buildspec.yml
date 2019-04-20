@@ -6,4 +6,4 @@ phases:
       - npm install
       - npm run test
       - npm run sls -- deploy -s dev -r us-east-1
-      - npm run acceptancegit stat
+      #- npm run acceptancegit stat
